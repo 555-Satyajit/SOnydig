@@ -21352,3 +21352,253 @@ ul {
     padding: 30px;
   }
 }
+/* ===============================
+   SERVICES RESPONSIVE BEHAVIOR
+================================ */
+
+/* Desktop (default) → side by side */
+.services .service-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Title styling */
+.services .nav-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Description */
+.services .service-row p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===============================
+   MOBILE FIX (THIS IS THE KEY)
+================================ */
+@media (max-width: 767px) {
+  .services .service-row {
+    flex-direction: column;      /* STACK */
+    align-items: flex-start;     /* LEFT ALIGN */
+    gap: 0.35rem;
+  }
+
+  .services .nav-link {
+    font-size: 1.1rem;
+    white-space: normal;         /* Allow natural wrapping */
+  }
+
+  .services .service-row p {
+    white-space: normal;
+    line-height: 1.5;
+  }
+}
+
+/* Divider */
+.services .nav-item {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove default nav border */
+.services .nav-tabs {
+  border-bottom: none;
+}
+
+/* Pricing Swiper Styles */
+.pricing-swiper-container {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .pricing-swiper-container {
+    padding: 0 60px;
+  }
+}
+
+.pricing-swiper-wrapper {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 1.75rem;
+  will-change: transform;
+}
+
+.pricing-swiper-wrapper.no-transition {
+  transition: none;
+}
+
+.pricing-swiper-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Navigation Buttons */
+.swiper-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--bs-white);
+  border: 1px solid var(--bs-border-color);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+@media (min-width: 1200px) {
+  .swiper-nav-btn {
+    display: flex;
+  }
+}
+
+.swiper-nav-btn:hover {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+.swiper-nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.swiper-nav-btn:hover iconify-icon {
+  color: var(--bs-dark);
+}
+
+.swiper-btn-prev {
+  left: 0;
+}
+
+.swiper-btn-next {
+  right: 0;
+}
+
+.swiper-nav-btn iconify-icon {
+  font-size: 1.5rem;
+  color: var(--bs-dark);
+  transition: color 0.3s ease;
+}
+
+/* Pagination Dots */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bs-border-color);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.swiper-pagination-bullet::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet:hover::before {
+  background: rgba(0, 198, 255, 0.1);
+}
+
+.swiper-pagination-bullet.active {
+  background: var(--bs-primary);
+  width: 32px;
+  border-radius: 6px;
+}
+
+/* Autoplay Progress Indicator */
+.swiper-pagination-bullet.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--bs-dark);
+  border-radius: 6px;
+  animation: autoplayProgress 3s linear;
+}
+
+@keyframes autoplayProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.swiper-pagination-bullet.active.paused::after {
+  animation-play-state: paused;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .pricing-swiper-slide {
+    flex: 0 0 calc(50% - 0.875rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricing-swiper-slide {
+    flex: 0 0 calc(33.333% - 1.167rem);
+  }
+}
+
+/* Touch Interaction */
+.pricing-swiper-wrapper {
+  cursor: grab;
+}
+
+.pricing-swiper-wrapper.dragging {
+  cursor: grabbing;
+  transition: none;
+}
+
+.pricing-swiper-wrapper.dragging .card {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Card hover effect during autoplay */
+.pricing-swiper-container:hover .pricing-swiper-wrapper {
+  animation-play-state: paused;
+}
+
+/* Smooth card appearance */
+.pricing-swiper-slide .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-swiper-slide .card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--bs-box-shadow-lg);
+}
