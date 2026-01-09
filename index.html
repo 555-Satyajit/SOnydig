@@ -137,6 +137,7 @@
       </div>
     </section>
 
+
     <!--  Stats & Facts Section -->
     <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
       <div class="container">
@@ -360,7 +361,7 @@
     <!--  Services Section -->
     <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
       <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-10">
+        <div class="d-flex flex-column gap-5 gap-xl-10"data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
 
           <!-- Header -->
           <div class="row gap-7 gap-xl-0">
@@ -369,7 +370,7 @@
                 <span
                   class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
                 <hr class="border-line bg-white">
-                <span class="badge text-dark bg-white">Services</span>
+                <span class="badge text-dark bg-white">Solutions</span>
               </div>
             </div>
 
@@ -384,86 +385,194 @@
             </div>
           </div>
 
+
           <!-- Services Tabs -->
           <div class="services-tab">
-            <div class="row gap-5 gap-xl-0">
+            <div class="container">
 
-              <!-- Image -->
-              <div class="col-xl-4">
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="one">
-                    <img src="assets/images/services/services-img-1.jpg" class="img-fluid" alt="">
+              <!-- Tab Navigation -->
+              <ul class="nav nav-tabs services-list">
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#service-1">
+                    Software Development
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service-2">
+                    Web Development
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service-3">
+                    Digital Marketing & SEO
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service-4">
+                    Cloud & DevOps
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab Content -->
+              <div class="tab-content services-tab-content">
+
+                <!-- Service 1 -->
+                <div class="tab-pane fade show active" id="service-1">
+                  <h2 class="service-title">Software Development</h2>
+                  <p class="service-description">
+                    Bespoke web applications, mobile apps, and enterprise software built for scalability.
+                  </p>
+                  <div class="service-images">
+                    <img src="assets/images/services/services-img-1.jpg" class="img-fluid" alt="Software Development">
+                    <img src="assets/images/services/services-img-1.jpg" class="img-fluid" alt="Software Development">
+                    <img src="assets/images/services/services-img-1.jpg"" class=" img-fluid" alt="Software Development">
                   </div>
-                  <div class="tab-pane fade" id="two">
-                    <img src="assets/images/services/services-img-2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <!-- Service 2 -->
+                <div class="tab-pane fade" id="service-2">
+                  <h2 class="service-title">Web Development</h2>
+                  <p class="service-description">
+                    Responsive, secure, and SEO-optimized websites using modern frameworks.
+                  </p>
+                  <div class="service-images">
+                    <img src="assets/images/services/services-img-2.jpg" class="img-fluid" alt="Web Development">
+                    <img src="assets/images/services/services-img-2.jpg" class="img-fluid" alt="Web Development">
+                    <img src="assets/images/services/services-img-2.jpg" class="img-fluid" alt="Web Development">
                   </div>
-                  <div class="tab-pane fade" id="three">
-                    <img src="assets/images/services/services-img-3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <!-- Service 3 -->
+                <div class="tab-pane fade" id="service-3">
+                  <h2 class="service-title">Digital Marketing & SEO</h2>
+                  <p class="service-description">
+                    Data-driven SEO, performance marketing, and lead generation for growth.
+                  </p>
+                  <div class="service-images">
+                    <img src="assets/images/services/services-img-3.jpg" class="img-fluid" alt="Digital Marketing">
+                    <img src="assets/images/services/services-img-3.jpg" class="img-fluid" alt="Digital Marketing">
+                    <img src="assets/images/services/services-img-3.jpg" class="img-fluid" alt="Digital Marketing">
                   </div>
-                  <div class="tab-pane fade" id="four">
-                    <img src="assets/images/services/services-img-4.jpg" class="img-fluid" alt="">
+                </div>
+
+                <!-- Service 4 -->
+                <div class="tab-pane fade" id="service-4">
+                  <h2 class="service-title">Cloud & DevOps</h2>
+                  <p class="service-description">
+                    Cloud migration, CI/CD pipelines, and DevOps automation.
+                  </p>
+                  <div class="service-images">
+                    <img src="assets/images/services/services-img-4.jpg" class="img-fluid" alt="Cloud & DevOps">
+                    <img src="assets/images/services/services-img-4.jpg" class="img-fluid" alt="Cloud & DevOps">
+                    <img src="assets/images/services/services-img-4.jpg" class="img-fluid" alt="Cloud & DevOps">
+                  </div>
+                </div>
+                  <a href="projects.html" class="btn service-cta-btn border border-white border-opacity-25 mt-4">
+            <span class="btn-text">See our Work</span>
+            <iconify-icon icon="lucide:arrow-up-right"
+              class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center">
+            </iconify-icon>
+          </a>
+              </div>
+                 
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Awards & Recognition Section -->
+    <section class="Recent-news bg-light-gray py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+
+          <!-- Heading Row (UNCHANGED) -->
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">
+                  04
+                </span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">Awards</span>
+              </div>
+            </div>
+
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Awards & Recognition</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">
+                      Your favorite companies trust us. Our work has been recognized
+                      by leading global brands and platforms.
+                    </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <!-- Tabs -->
-              <div class="col-xl-8">
-                <ul class="nav nav-tabs services-list">
+          <!-- Awards Logos (AUTO GRID) -->
+          <div class="awards-logos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
-                  <!-- ITEM -->
-                  <li class="nav-item">
-                    <div class="service-row">
-                      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#one">
-                        Software Development
-                      </button>
-                      <p>
-                        Bespoke web applications, mobile apps, and enterprise software built for scalability.
-                      </p>
-                    </div>
-                  </li>
+            <div class="awards-grid">
 
-                  <li class="nav-item">
-                    <div class="service-row">
-                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#two">
-                        Web Development
-                      </button>
-                      <p>
-                        Responsive, secure, and SEO-optimized websites using modern frameworks.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li class="nav-item">
-                    <div class="service-row">
-                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#three">
-                        Digital Marketing & SEO
-                      </button>
-                      <p>
-                        Data-driven SEO, performance marketing, and lead generation for growth.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li class="nav-item">
-                    <div class="service-row">
-                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#four">
-                        Cloud & DevOps
-                      </button>
-                      <p>
-                        Cloud migration, CI/CD pipelines, and DevOps automation.
-                      </p>
-                    </div>
-                  </li>
-
-                </ul>
-
-                <a href="projects.html" class="btn border border-white border-opacity-25 mt-4">
-                  <span class="btn-text">See our Work</span>
-                  <iconify-icon icon="lucide:arrow-up-right"
-                    class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center">
-                  </iconify-icon>
-                </a>
+              <div class="award-logo">
+                <img
+                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.interfinet.com/wp-content/uploads/2022/09/IMAGE_1639744266_ocac2.png"
+                  alt="NVIDIA">
               </div>
+
+              <div class="award-logo">
+                <img src="https://logonoid.com/images/iso-logo.png" alt="Column">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/github.svg" alt="GitHub">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/nike.svg" alt="Nike">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/laravel.svg" alt="Laravel">
+              </div>
+
+              <!-- <div class="award-logo">
+                <img src="assets/images/awards/lilly.svg" alt="Lilly">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/lemonsqueezy.svg" alt="Lemon Squeezy">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/openai.svg" alt="OpenAI">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/tailwind.svg" alt="Tailwind CSS">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/vercel.svg" alt="Vercel">
+              </div>
+
+              <div class="award-logo">
+                <img src="assets/images/awards/zapier.svg" alt="Zapier">
+              </div> -->
+
+              <!-- add unlimited logos here -->
 
             </div>
           </div>
@@ -472,7 +581,8 @@
       </div>
     </section>
 
-    <!--  Why choose us Section -->
+
+    <!--  Tech Stack Section -->
     <section class="why-choose-us py-5 py-lg-11 py-xl-12">
       <div class="container">
         <div class="row justify-content-between gap-5 gap-xl-0">
@@ -481,128 +591,241 @@
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
                 <hr class="border-line">
-                <span class="badge text-bg-dark">About us</span>
+                <span class="badge text-bg-dark">Technology</span>
               </div>
-              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Why choose us</h2>
-              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We blend
-                creativity with strategy to craft unique digital experiences that make an
-                impact.
-                With a focus on innovation, attention to details.</p>
+              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Technology</h2>
+              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">Powering
+                innovation with cutting-edge technologies that drive exceptional digital experiences and scalable
+                solutions.</p>
             </div>
           </div>
-          <div class="col-xl-9 col-xxl-8">
-            <div class="row">
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up"
-                  data-aos-delay="100" data-aos-duration="1000">
-                  <div class="card-body d-flex flex-column justify-content-between">
-                    <div class="d-flex flex-column gap-3 position-relative z-1">
-                      <ul class="list-unstyled mb-0 hstack gap-1">
-                        <li><a class="hstack" href="javascript:void(0)">
-                            <iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon>
-                          </a></li>
-                        <li><a class="hstack" href="javascript:void(0)">
-                            <iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon>
-                          </a></li>
-                        <li><a class="hstack" href="javascript:void(0)">
-                            <iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon>
-                          </a></li>
-                        <li><a class="hstack" href="javascript:void(0)">
-                            <iconify-icon icon="solar:star-bold" class="fs-6 text-dark"></iconify-icon>
-                          </a></li>
-                        <li><a class="hstack" href="javascript:void(0)">
-                            <iconify-icon icon="solar:star-line-duotone" class="fs-6 text-dark"></iconify-icon>
-                          </a></li>
-                      </ul>
-                      <p class="mb-0 fs-6 text-dark">The team exceeded our expectations with a stunning brand identity.
-                      </p>
+          <div class="col-xl-9 col-xxl-8" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            <!-- Tech Tabs Navigation -->
+            <ul class="nav nav-tabs tech-tabs mb-7">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#frontend">
+                  Frontend
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#backend">
+                  Backend
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#database">
+                  Database
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#analytics">
+                  Analytics
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#mobile">
+                  Mobile Apps
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cloud">
+                  Cloud
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#devops">
+                  DevOps
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="tech.html" class="nav-link">
+                  Explore All
+                </a>
+              </li>
+
+            </ul>
+
+            <!-- Tech Tab Content -->
+            <div class="tab-content tech-tab-content">
+
+              <!-- Frontend -->
+              <div class="tab-pane fade show active" id="frontend">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React">
+                      <div class="tech-name">React</div>
                     </div>
-                    <div class="position-relative z-1">
-                      <div class="pb-6 border-bottom">
-                        <h2 class="mb-0">98.6%</h2>
-                        <p class="mb-0">Customer satisfaction</p>
-                      </div>
-                      <div class="hstack gap-6 pt-6">
-                        <img src="assets/images/profile/avatar-1.png" alt=""
-                          class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
-                        <div>
-                          <h5 class="mb-0">Wade Warren</h5>
-                          <p class="mb-0">Bank of America</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="position-absolute bottom-0 end-0">
-                      <img src="assets/images/backgrounds/customer-satisfaction-bg.svg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                  <div class="position-relative">
-                    <img src="assets/images/services/services-img-2.jpg" alt="" class="img-fluid w-100">
                   </div>
 
-                  <div class="card bg-dark">
-                    <div class="card-body d-flex flex-column gap-7">
-                      <div>
-                        <h2 class="mb-0 text-white">500+</h2>
-                        <p class="mb-0 text-white text-opacity-70">Successful projects completed</p>
-                      </div>
-                      <ul class="d-flex align-items-center mb-0">
-                        <li>
-                          <a href="javascript:void(0)">
-                            <img src="assets/images/profile/user-1.jpg" width="44" height="44"
-                              class="rounded-circle border border-2 border-dark" alt="user-1">
-                          </a>
-                        </li>
-                        <li class="ms-n2">
-                          <a href="javascript:void(0)">
-                            <img src="assets/images/profile/user-2.jpg" width="44" height="44"
-                              class="rounded-circle border border-2 border-dark" alt="user-2">
-                          </a>
-                        </li>
-                        <li class="ms-n2">
-                          <a href="javascript:void(0)">
-                            <img src="assets/images/profile/user-3.jpg" width="44" height="44"
-                              class="rounded-circle border border-2 border-dark" alt="user-3">
-                          </a>
-                        </li>
-                        <li class="ms-n2">
-                          <a href="javascript:void(0)">
-                            <img src="assets/images/profile/user-4.jpg" width="44" height="44"
-                              class="rounded-circle border border-2 border-dark" alt="user-4">
-                          </a>
-                        </li>
-                      </ul>
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                        alt="Next.js">
+                      <div class="tech-name">Next.js</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript">
+                      <div class="tech-name">TypeScript</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300"
-                  data-aos-duration="1000">
-                  <span
-                    class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
-                  <div class="card-body d-flex flex-column justify-content-between">
-                    <div>
-                      <h2 class="mb-0">238+</h2>
-                      <p class="mb-0 text-dark">Brands served worldwide</p>
-                    </div>
-                    <div class="d-flex flex-column gap-3">
-                      <a href="index.html" class="logo-dark">
-                        <!-- <img src="assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid"> -->
-                      </a>
-                      <p class="mb-0 fs-5 text-dark">Our global reach allows us to create unique, culturally relevant
-                        designs for businesses across different industries.</p>
+
+              <!-- Backend -->
+              <div class="tab-pane fade" id="backend">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js">
+                      <div class="tech-name">Node.js</div>
                     </div>
                   </div>
-                  <span
-                    class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python">
+                      <div class="tech-name">Python</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                        alt="GraphQL">
+                      <div class="tech-name">GraphQL</div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <!-- Database -->
+              <div class="tab-pane fade" id="database">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB">
+                      <div class="tech-name">MongoDB</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL">
+                      <div class="tech-name">PostgreSQL</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                        alt="Redis">
+                      <div class="tech-name">Redis</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Analytics -->
+              <div class="tab-pane fade" id="analytics">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python">
+                      <div class="tech-name">Python</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Apps -->
+              <div class="tab-pane fade" id="mobile">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React Native">
+                      <div class="tech-name">React Native</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cloud -->
+              <div class="tab-pane fade" id="cloud">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                        alt="AWS">
+                      <div class="tech-name">AWS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DevOps -->
+              <div class="tab-pane fade" id="devops">
+                <div class="tech-container">
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker">
+                      <div class="tech-name">Docker</div>
+                    </div>
+                  </div>
+
+                  <div class="tech-ball">
+                    <div class="glass-sphere"></div>
+                    <div class="refraction"></div>
+                    <div class="tech-content">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                        alt="Kubernetes">
+                      <div class="tech-name">Kubernetes</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -618,7 +841,7 @@
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
                 <hr class="border-line bg-white">
                 <span class="badge text-bg-dark">Testimonial</span>
               </div>
@@ -805,7 +1028,8 @@
                           </li>
                         </ul>
                       </div>
-                      <a href="" class="btn w-100 justify-content-center">
+                      <a href="contact.html" class="btn w-100 justify-content-center"
+                        onclick="window.location.href='contact.html'">
                         <span class="btn-text">Subscribe now</span>
                         <iconify-icon icon="lucide:arrow-up-right"
                           class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
@@ -866,7 +1090,7 @@
                           </li>
                         </ul>
                       </div>
-                      <a href="" class="btn w-100 justify-content-center">
+                      <a href="contact.html" class="btn w-100 justify-content-center">
                         <span class="btn-text">Subscribe now</span>
                         <iconify-icon icon="lucide:arrow-up-right"
                           class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
@@ -921,7 +1145,7 @@
                           </li>
                         </ul>
                       </div>
-                      <a href="" class="btn w-100 justify-content-center">
+                      <a href="contact.html" class="btn w-100 justify-content-center">
                         <span class="btn-text">Subscribe now</span>
                         <iconify-icon icon="lucide:arrow-up-right"
                           class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
@@ -976,7 +1200,7 @@
                           </li>
                         </ul>
                       </div>
-                      <a href="" class="btn w-100 justify-content-center">
+                      <a href="contact.html" class="btn w-100 justify-content-center">
                         <span class="btn-text">Subscribe now</span>
                         <iconify-icon icon="lucide:arrow-up-right"
                           class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
@@ -1188,7 +1412,7 @@
                 <span
                   class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">09</span>
                 <hr class="border-line bg-white">
-                <span class="badge text-bg-dark">Resources</span>
+                <span class="badge text-bg-dark">Latest Update</span>
               </div>
             </div>
             <div class="col-xl-8 col-xxl-7">
@@ -1196,7 +1420,7 @@
                 <div class="col-xxl-8">
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
-                    <h2 class="mb-0">Recent news</h2>
+                    <h2 class="mb-0">Latest update</h2>
                     <p class="fs-5 mb-0 text-opacity-70">Explore the latest trends, bold projects, and creative insights
                       from our agency—shaping the future of branding, digital experiences, and storytelling.</p>
                   </div>
@@ -1251,16 +1475,21 @@
     <section class="get-in-touch py-5 py-lg-11 py-xl-12">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-10">
+
+          <!-- Section Header -->
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">10</span>
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">
+                  10
+                </span>
                 <hr class="border-line bg-white">
                 <span class="badge text-bg-dark">Contact us</span>
               </div>
             </div>
+
             <div class="col-xl-8 col-xxl-7">
               <div class="row">
                 <div class="col-xxl-8">
@@ -1272,35 +1501,45 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-between gap-7 gap-xl-0">
-            <div class="col-xl-3">
-              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Let’s collaborate
-                and create something amazing! Tell me about your project—I’m all
-                ears.</p>
+
+          <!-- Map + Form -->
+          <div class="row justify-content-center align-items-center gap-7 gap-xl-0">
+
+            <!-- Map -->
+            <div class="col-xl-5">
+              <div class="contact-map" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <iframe src="https://www.google.com/maps?q=Saheed%20Nagar%2C%20Bhubaneswar&output=embed" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
             </div>
-            <div class="col-xl-8">
-              <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div>
-                  <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Name">
-                </div>
-                <div>
-                  <input type="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
-                    placeholder="Email" aria-describedby="emailHelp">
-                </div>
-                <div>
-                  <textarea class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
-                    placeholder="Tell us about your project" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn w-100 justify-content-center">
+
+            <!-- Contact Form -->
+            <div class="col-xl-5">
+              <form class="contact-form d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="1000">
+
+                <input type="text" class="form-control border-0 border-bottom border-dark rounded-0"
+                  placeholder="Your Name">
+
+                <input type="email" class="form-control border-0 border-bottom border-dark rounded-0"
+                  placeholder="Email Address">
+
+                <textarea class="form-control border-0 border-bottom border-dark rounded-0"
+                  placeholder="Tell us about your project" rows="3"></textarea>
+
+                <button type="submit" class="btn w-50 justify-content-between">
                   <span class="btn-text">Submit message</span>
                   <iconify-icon icon="lucide:arrow-up-right"
                     class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
                   </iconify-icon>
                 </button>
+
               </form>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
@@ -1367,6 +1606,24 @@
   <script src="assets/libs/aos-master/dist/aos.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabButtons = document.querySelectorAll('.services-list .nav-link');
+
+      tabButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+          // Hide all descriptions
+          document.querySelectorAll('.tab-descriptions .tab-pane').forEach(pane => {
+            pane.classList.remove('show', 'active');
+          });
+
+          // Show corresponding description
+          const descIds = ['one-desc', 'two-desc', 'three-desc', 'four-desc'];
+          document.getElementById(descIds[index]).classList.add('show', 'active');
+        });
+      });
+    });
+  </script>
   <script>
     // Pricing Cards Autoplay Swiper with Infinite Loop
     class PricingSwiper {
@@ -1524,6 +1781,12 @@
       }
 
       touchStart(e) {
+        // ✅ ALLOW LINK & BUTTON CLICKS
+        if (e.target.closest('a, button')) {
+          this.isDragging = false;
+          return;
+        }
+
         this.isDragging = true;
         this.startPos = this.getPositionX(e);
         this.wrapper.classList.add('dragging');
@@ -1533,6 +1796,7 @@
           cancelAnimationFrame(this.animationID);
         }
       }
+
 
       touchMove(e) {
         if (!this.isDragging) return;
