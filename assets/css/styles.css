@@ -21954,14 +21954,18 @@ ul {
 /* Tab Content Area */
 .services-tab-content {
   padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .service-title {
   font-size: 42px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
-  padding-left: 130px;
+ 
 }
 
 .service-description {
@@ -21970,7 +21974,14 @@ ul {
   line-height: 1.8;
   margin-bottom: 40px;
   max-width: 800px;
-  padding-left: 130px;
+
+}
+
+@media (min-width: 1536px) {
+  .service-title {
+    position: relative;
+   
+  }
 }
 
 
@@ -22055,9 +22066,6 @@ ul {
     font-size: 32px;
     padding: 0 0 0 0;
   }
-  .service-cta-btn{
-  margin-left: 0;
-}
   
   .service-description {
     font-size: 16px;
@@ -22278,20 +22286,28 @@ ul {
   pointer-events: auto;
   cursor: pointer;
 }
-.service-cta-btn{
-  margin-left: 130px;
-  background: var(--bs-primary);
-}
-/* Desktop only */
-@media (min-width: 1200px) {
-  .service-cta-btn {
-    margin-left: 130px;
-  }
-}
 
-/* Tablet & mobile */
-@media (max-width: 1199px) {
-  .service-cta-btn {
-    margin-left: 0;
-  }
-}
+
+
+
+.submenu-toggle {
+      text-decoration: none !important;
+      transition: transform 0.3s ease;
+    }
+    
+    .submenu-toggle.active {
+      transform: rotate(180deg);
+    }
+    
+    .submenu-toggle:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    
+    .submenu {
+      transition: all 0.3s ease;
+    }
+    
+    .submenu a:hover {
+      color: #0d6efd !important;
+    }

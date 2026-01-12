@@ -14,7 +14,7 @@
 <body>
 
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+<header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
@@ -30,7 +30,7 @@
           <div class="btn-group">
             <button
               class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
-              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
               <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
             </button>
             <ul class="dropdown-menu dropdown-menu-end p-4">
@@ -52,25 +52,51 @@
                           src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
                           class="img-fluid animate-spin">About</a>
                     </li>
-                    <li class="header-item">
-                      <a href="projects.html" class="header-link  hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Solutions</a>
+                    
+                    <!-- DROPDOWN ITEM - Solutions -->
+                    <li class="header-item submenu-item">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <a href="projects.html" class="header-link d-flex align-items-center gap-2 fs-7 fw-bold text-dark text-decoration-none">
+                          <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Solutions
+                        </a>
+                        <button type="button" class="btn btn-link p-0 text-dark submenu-toggle" onclick="toggleSubmenu(this, event)">
+                          <iconify-icon icon="icon-park-outline:down" class="fs-6"></iconify-icon>
+                        </button>
+                      </div>
+                      <ul class="submenu list-unstyled ps-4 mt-2" style="display: none;">
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Web Development</a></li>
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Mobile Apps</a></li>
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Cloud Solutions</a></li>
+                      </ul>
                     </li>
+                    
                     <li class="header-item">
                       <a href="tech.html" class="header-link  hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
                           class="img-fluid animate-spin">TECHNOLOGIES</a>
                     </li>
-                    <li class="header-item">
-                      <a href="industries.html" class="header-link  hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Industries</a>
+                    
+                    <!-- DROPDOWN ITEM - Industries -->
+                    <li class="header-item submenu-item">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <a href="industries.html" class="header-link d-flex align-items-center gap-2 fs-7 fw-bold text-dark text-decoration-none">
+                          <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Industries
+                        </a>
+                        <button type="button" class="btn btn-link p-0 text-dark submenu-toggle" onclick="toggleSubmenu(this, event)">
+                          <iconify-icon icon="icon-park-outline:down" class="fs-6"></iconify-icon>
+                        </button>
+                      </div>
+                      <ul class="submenu list-unstyled ps-4 mt-2" style="display: none;">
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Healthcare</a></li>
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Finance</a></li>
+                        <li><a class="d-block py-1 text-dark text-decoration-none" href="#">Retail</a></li>
+                      </ul>
                     </li>
+                    
                     <li class="header-item">
                       <a href="blog.html" class="header-link  hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Blog</a>
+                          class="img-fluid animate-spin">Latest Updates</a>
                     </li>
                     <li class="header-item">
                       <a href="career.html" class="header-link  hstack gap-2 fs-7 fw-bold text-dark"><img
@@ -83,14 +109,6 @@
                           class="img-fluid animate-spin">contact us</a>
                     </li>
                   </ul>
-                  <!-- <div class="hstack gap-3">
-                    <a href="sign-in.html"
-                      class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign
-                      In</a>
-                    <a href="sign-up.html"
-                      class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-50 hstack justify-content-center">Sign
-                      Up</a>
-                  </div> -->
                 </div>
                 <div>
                   <a class="text-dark" href="tel:+91-814-431-1077">+91-814-431-1077</a>
@@ -1557,10 +1575,10 @@
             <li><a class="link-hover fs-5 text-white" href="projects.html">Solutions</a></li>
             <li><a class="link-hover fs-5 text-white" href="tech.html">Technologies</a></li>
             <li><a class="link-hover fs-5 text-white" id="services" href="industries.html">Industries</a></li>
-            <li><a class="link-hover fs-5 text-white" href="blog.html">Blog</a></li>
+            <li><a class="link-hover fs-5 text-white" href="blog.html">Latest Updates</a></li>
             <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
             <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
+           
           </ul>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
@@ -1973,6 +1991,31 @@
       // Optional: Expose to window for manual control
       window.pricingSwiper = swiper;
     });
+  </script>
+   <script>
+    function toggleSubmenu(button, event) {
+      event.preventDefault();
+      event.stopPropagation();
+      
+      const submenuItem = button.closest('.submenu-item');
+      const submenu = submenuItem.querySelector('.submenu');
+      const isOpen = submenu.style.display === 'block';
+      
+      // Close all other submenus
+      document.querySelectorAll('.submenu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+      
+      document.querySelectorAll('.submenu-toggle').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Toggle current submenu
+      if (!isOpen) {
+        submenu.style.display = 'block';
+        button.classList.add('active');
+      }
+    }
   </script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
